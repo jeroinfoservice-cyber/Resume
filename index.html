@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jero Selvin Josis Justin — Test, Quality & Calibration Engineer</title>
+<meta name="description" content="Jero Selvin Josis Justin — Test, Quality & Calibration Engineer with 20+ years across manufacturing test operations, calibration, networking and AI/Robotics education. Based in Pulau Pinang, Malaysia.">
+<meta name="author" content="Jero Selvin Josis Justin">
+<meta name="keywords" content="Test Engineer, Quality Engineer, Calibration Engineer, Manufacturing Engineer, RCA, CAPA, Root Cause Analysis, Yield Improvement, Six Sigma, SPC, NPI, Reliability Engineering, Python, PyTest, PySerial, AutoCAD, Penang Malaysia">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jero Selvin Josis Justin — Test, Quality & Calibration Engineer">
+<meta property="og:description" content="20+ years across manufacturing test, calibration, quality and AI/Robotics education. RCA/CAPA, yield improvement, Six Sigma, Python test automation.">
+<meta property="og:image" content="assets/photo.jpg">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%230A1628%22/><circle cx=%2250%22 cy=%2250%22 r=%2230%22 fill=%22none%22 stroke=%22%23F5A623%22 stroke-width=%226%22/><circle cx=%2250%22 cy=%2250%22 r=%226%22 fill=%22%23F5A623%22/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jero Selvin Josis Justin",
+  "jobTitle": "Test, Quality & Calibration Engineer",
+  "email": "mailto:jerojosis1906@gmail.com",
+  "telephone": "+60102722053",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Pulau Pinang",
+    "addressCountry": "MY"
+  },
+  "knowsLanguage": ["English", "Malay", "Tamil"],
+  "alumniOf": [
+    "Wilmington Metropolitan University",
+    "Hard-Net, Tamil Nadu",
+    "Micro Intelligence Technical Institute, Tamil Nadu"
+  ],
+  "knowsAbout": ["Test Engineering", "Root Cause Analysis", "CAPA", "Calibration", "Six Sigma", "Statistical Process Control", "Python Test Automation", "Manufacturing Engineering", "Artificial Intelligence Education"]
+}
+</script>
+
+<style>
+  :root{
+    --navy-deep: #08131F;
+    --navy-panel: #0E2136;
+    --navy-line: #1C3A57;
+    --paper: #E9EEF3;
+    --paper-dim: #91A6BC;
+    --amber: #F5A623;
+    --amber-dim: #B97E1A;
+    --cyan: #4FD1C5;
+    --ok: #6FCF97;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+    --grid-gap: 6px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:
+      linear-gradient(var(--navy-deep), var(--navy-deep)) fixed,
+      repeating-linear-gradient(0deg, rgba(79,209,197,0.045) 0, rgba(79,209,197,0.045) 1px, transparent 1px, transparent 32px),
+      repeating-linear-gradient(90deg, rgba(79,209,197,0.045) 0, rgba(79,209,197,0.045) 1px, transparent 1px, transparent 32px),
+      var(--navy-deep);
+    color: var(--paper);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{color:var(--cyan);}
+  a:focus-visible, button:focus-visible, .tab:focus-visible{
+    outline: 2px solid var(--amber);
+    outline-offset: 3px;
+  }
+
+  .wrap{max-width: 980px; margin:0 auto; padding: 0 28px;}
+
+  /* ---------- corner registration marks ---------- */
+  .reg{position:fixed; width:22px; height:22px; z-index:40; pointer-events:none; opacity:.5;}
+  .reg::before, .reg::after{content:""; position:absolute; background:var(--paper-dim);}
+  .reg::before{width:100%; height:1px; top:50%;}
+  .reg::after{height:100%; width:1px; left:50%;}
+  .reg.tl{top:14px; left:14px;} .reg.tr{top:14px; right:14px;}
+  .reg.bl{bottom:14px; left:14px;} .reg.br{bottom:14px; right:14px;}
+  @media (max-width: 720px){ .reg{display:none;} }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position: sticky; top:0; z-index:30;
+    background: rgba(8,19,31,0.9);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--navy-line);
+  }
+  .topbar-inner{
+    max-width:980px; margin:0 auto; padding: 14px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+    font-family: var(--font-mono); font-size: 12.5px; letter-spacing:.02em;
+    color: var(--paper-dim);
+  }
+  .topbar .id{color:var(--paper);}
+  .topbar nav{display:flex; gap:20px;}
+  .topbar nav a{color:var(--paper-dim); text-decoration:none; transition: color .15s;}
+  .topbar nav a:hover{color:var(--amber);}
+  .status-dot{display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--ok); margin-right:6px; box-shadow:0 0 6px var(--ok);}
+  @media (max-width: 620px){ .topbar nav{display:none;} }
+
+  /* ---------- hero ---------- */
+  header.hero{padding: 64px 0 40px; position:relative;}
+  .hero-grid{
+    display:grid; grid-template-columns: 1fr 300px; gap: 40px; align-items:start;
+  }
+  .eyebrow{
+    font-family: var(--font-mono); font-size:12.5px; color:var(--amber);
+    letter-spacing:.06em; margin-bottom:14px; display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow .rule{flex:0 0 26px; height:1px; background:var(--amber-dim);}
+
+  h1.name{
+    font-family: var(--font-display); font-weight:700;
+    font-size: clamp(34px, 5.4vw, 56px);
+    line-height: 1.05; color:var(--paper); margin-bottom:10px;
+  }
+  .role-line{
+    font-family: var(--font-body); font-weight:500; font-size: 18px;
+    color: var(--cyan); margin-bottom: 22px;
+  }
+  .lede{max-width: 54ch; color: var(--paper-dim); font-size: 15.5px;}
+
+  .contact-row{
+    display:flex; flex-wrap:wrap; gap: 10px 22px; margin-top: 26px;
+    font-family: var(--font-mono); font-size: 13px;
+  }
+  .contact-row a{color:var(--paper); text-decoration:none; border-bottom:1px solid var(--navy-line); padding-bottom:2px; transition: border-color .15s, color .15s;}
+  .contact-row a:hover{color:var(--amber); border-color:var(--amber);}
+
+  .cta-row{display:flex; gap:12px; margin-top:28px; flex-wrap:wrap;}
+  .btn{
+    font-family: var(--font-mono); font-size: 13px; letter-spacing:.02em;
+    padding: 11px 18px; border-radius: 3px; text-decoration:none;
+    display:inline-flex; align-items:center; gap:8px; transition: transform .12s ease, background .15s;
+  }
+  .btn-primary{background:var(--amber); color:#1a1200; font-weight:600;}
+  .btn-primary:hover{background:#ffb845; transform:translateY(-1px);}
+  .btn-ghost{border:1px solid var(--navy-line); color:var(--paper);}
+  .btn-ghost:hover{border-color:var(--cyan); color:var(--cyan);}
+
+  /* ---------- nameplate ---------- */
+  .nameplate{
+    background: var(--navy-panel);
+    border: 1px solid var(--navy-line);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .nameplate-photo{
+    width:100%; aspect-ratio: 4/4.5; object-fit:cover; display:block;
+    filter: grayscale(15%) contrast(1.03);
+    border-bottom: 1px solid var(--navy-line);
+  }
+  .nameplate-head{
+    display:flex; justify-content:space-between; align-items:center;
+    padding: 10px 14px; background: rgba(79,209,197,0.06);
+    border-bottom: 1px solid var(--navy-line);
+    font-family: var(--font-mono); font-size: 11px; letter-spacing:.08em; color: var(--cyan);
+  }
+  dl.spec{padding: 14px 16px 16px;}
+  dl.spec div{
+    display:flex; justify-content:space-between; gap: 10px;
+    padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.08);
+    font-family: var(--font-mono); font-size: 12px;
+  }
+  dl.spec div:last-child{border-bottom:none;}
+  dl.spec dt{color: var(--paper-dim); flex-shrink:0;}
+  dl.spec dd{color: var(--paper); text-align:right;}
+  @media (max-width: 780px){ .hero-grid{grid-template-columns: 1fr;} .nameplate{max-width:280px;} }
+
+  /* ---------- section shell ---------- */
+  section{padding: 56px 0;}
+  .section-head{display:flex; align-items:baseline; gap:16px; margin-bottom: 34px;}
+  .section-num{font-family:var(--font-mono); color:var(--amber-dim); font-size:13px;}
+  h2.section-title{
+    font-family: var(--font-display); font-weight:600; font-size: 26px; color:var(--paper);
+  }
+  .section-head .rule{flex:1; height:1px; background:var(--navy-line);}
+  hr.div{border:none; height:1px; background:var(--navy-line);}
+
+  /* ---------- about ---------- */
+  #about .about-body{display:grid; grid-template-columns: 2fr 1fr; gap: 40px;}
+  #about p{color: var(--paper-dim); max-width: 62ch; margin-bottom: 14px;}
+  #about p strong{color:var(--paper); font-weight:600;}
+  .fact{
+    font-family: var(--font-mono); font-size:12px; color:var(--paper-dim);
+    display:flex; justify-content:space-between; padding: 9px 0; border-bottom:1px dashed rgba(255,255,255,0.08);
+  }
+  .fact b{color:var(--cyan); font-weight:500;}
+  @media (max-width: 780px){ #about .about-body{grid-template-columns:1fr;} }
+
+  /* ---------- timeline ---------- */
+  .timeline{position:relative; padding-left: 92px;}
+  .timeline::before{
+    content:""; position:absolute; left:64px; top:6px; bottom:6px; width:1px;
+    background: var(--navy-line);
+  }
+  .tl-item{position:relative; padding-bottom: 42px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-years{
+    position:absolute; left:-92px; top:2px; width:80px; text-align:right;
+    font-family: var(--font-mono); font-size:11.5px; color: var(--paper-dim); line-height:1.4;
+  }
+  .tl-item::after{
+    content:""; position:absolute; left:-32px; top:6px; width:9px; height:9px;
+    border-radius:50%; background: var(--navy-deep); border:2px solid var(--amber);
+  }
+  .tl-item.current::after{background:var(--amber); box-shadow:0 0 8px var(--amber);}
+  .tl-role{font-family: var(--font-display); font-weight:600; font-size:18px; color:var(--paper); margin-bottom:3px;}
+  .tl-org{font-size: 14px; color: var(--cyan); margin-bottom:10px;}
+  .tl-org span{color:var(--paper-dim);}
+  .tl-desc{color: var(--paper-dim); max-width: 66ch; font-size: 14.5px;}
+  .tl-tag{
+    display:inline-block; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.04em;
+    color:var(--amber); border:1px solid var(--amber-dim); border-radius:2px; padding:2px 7px; margin-bottom:10px;
+  }
+  @media (max-width: 620px){
+    .timeline{padding-left:26px;}
+    .timeline::before{left:5px;}
+    .tl-item::after{left:1px;}
+    .tl-years{position:static; text-align:left; margin-bottom:6px; display:block;}
+  }
+
+  /* ---------- skills spec sheet ---------- */
+  .spec-sheet{border:1px solid var(--navy-line); border-radius:4px; overflow:hidden;}
+  .spec-row{
+    display:grid; grid-template-columns: 220px 1fr; border-bottom:1px solid var(--navy-line);
+  }
+  .spec-row:last-child{border-bottom:none;}
+  .spec-row .cat{
+    font-family:var(--font-mono); font-size:11.5px; letter-spacing:.04em; color:var(--amber);
+    padding:16px 18px; background: rgba(79,209,197,0.04); border-right:1px solid var(--navy-line);
+  }
+  .spec-row .items{padding:14px 18px; display:flex; flex-wrap:wrap; gap:8px 10px;}
+  .chip{
+    font-family: var(--font-mono); font-size:12.5px; color: var(--paper);
+    border:1px solid var(--navy-line); border-radius:2px; padding: 5px 10px;
+    background: rgba(255,255,255,0.02);
+  }
+  @media (max-width: 620px){ .spec-row{grid-template-columns:1fr;} .spec-row .cat{border-right:none; border-bottom:1px solid var(--navy-line);} }
+
+  /* ---------- certifications ---------- */
+  .cert-grid{display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px;}
+  .cert{
+    border:1px solid var(--navy-line); border-radius:4px; padding: 14px 16px;
+    display:flex; gap:12px; align-items:flex-start; background: rgba(255,255,255,0.015);
+  }
+  .cert .mark{
+    flex-shrink:0; width:26px; height:26px; border-radius:50%; border:1.5px solid var(--ok);
+    display:flex; align-items:center; justify-content:center; color:var(--ok); font-size:14px; margin-top:1px;
+  }
+  .cert-name{font-size:14px; color:var(--paper); font-weight:500;}
+  .cert-sub{font-family:var(--font-mono); font-size:11px; color:var(--paper-dim); margin-top:3px;}
+  @media (max-width: 620px){ .cert-grid{grid-template-columns:1fr;} }
+
+  /* ---------- education / languages ---------- */
+  .two-col{display:grid; grid-template-columns: 1.4fr 1fr; gap:40px;}
+  .edu-item{margin-bottom:20px;}
+  .edu-item:last-child{margin-bottom:0;}
+  .edu-degree{font-family:var(--font-display); font-weight:600; font-size:15.5px; color:var(--paper);}
+  .edu-school{font-size:13.5px; color:var(--paper-dim); margin-top:2px;}
+  .lang-bar{margin-bottom:16px;}
+  .lang-bar:last-child{margin-bottom:0;}
+  .lang-label{display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:12px; color:var(--paper-dim); margin-bottom:6px;}
+  .lang-track{height:5px; background:var(--navy-panel); border:1px solid var(--navy-line); border-radius:3px; overflow:hidden;}
+  .lang-fill{height:100%; background:linear-gradient(90deg, var(--amber-dim), var(--amber));}
+  @media (max-width: 780px){ .two-col{grid-template-columns:1fr;} }
+
+  /* ---------- footer ---------- */
+  footer{padding: 50px 0 70px; border-top:1px solid var(--navy-line); margin-top:20px;}
+  .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+  .footer-inner p{font-family:var(--font-mono); font-size:12px; color:var(--paper-dim);}
+
+  /* reveal on scroll */
+  .tl-item, .cert, .spec-row{opacity:0; transform: translateY(10px); transition: opacity .5s ease, transform .5s ease;}
+  .tl-item.in, .cert.in, .spec-row.in{opacity:1; transform:none;}
+  @media (prefers-reduced-motion: reduce){
+    .tl-item, .cert, .spec-row{opacity:1; transform:none; transition:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- print ---------- */
+  @media print{
+    .topbar, .reg, .cta-row, .btn{display:none !important;}
+    body{background:#fff !important; color:#111 !important;}
+    .nameplate, .cert, .spec-sheet, .spec-row{border-color:#ccc !important;}
+    a{color:#111 !important;}
+  }
+
+  /* ATS-friendly plain text summary (visually hidden, fully readable by parsers/screen readers) */
+  .sr-only{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+</style>
+</head>
+<body>
+
+<div class="reg tl"></div><div class="reg tr"></div><div class="reg bl"></div><div class="reg br"></div>
+
+<!-- Plain-text summary for ATS parsers and screen readers: same facts as the visual page -->
+<p class="sr-only">
+Jero Selvin Josis Justin. Test, Quality and Calibration Engineer based in Bukit Mertajam, Pulau Pinang, Malaysia.
+Phone +60102722053. Email jerojosis1906@gmail.com.
+Over 20 years of experience spanning IT and networking, calibration engineering, manufacturing engineering,
+senior test engineering, and AI and robotics education. Core skills: Test Failure Analysis, Yield Improvement,
+Root Cause Analysis (RCA), Corrective and Preventive Action (CAPA), Product Validation, Production Testing,
+Statistical Process Control (SPC), New Product Introduction (NPI), Reliability Engineering. Key technologies:
+Python, PyTest, PySerial, Power BI, SQL, Six Sigma, Lean Manufacturing, Industry 4.0, AutoCAD.
+Certified: Six Sigma Yellow Belt, Diploma in Quality Management, NDE Certification (Radiography, Magnetic
+Particle, Ultrasonic, Liquid Penetrant Testing), MCSA, CCNA, LabVIEW Core 1 and 2. Languages: English, Malay, Tamil.
+</p>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="id"><span class="status-dot"></span>JSJJ // OPEN TO WORK</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certs</a>
+      <a href="#education">Education</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="rule"></span>TEST · QUALITY · CALIBRATION ENGINEERING</div>
+        <h1 class="name">Jero Selvin<br>Josis Justin</h1>
+        <div class="role-line">Test &amp; Quality Engineer — AI/Robotics Educator</div>
+        <p class="lede">Twenty years across calibration, manufacturing and test engineering — reading failure logs the way most people read headlines. Now I split my time between production floors and classrooms, teaching the next generation to build the systems I've spent a career keeping accurate.</p>
+
+        <div class="contact-row">
+          <a href="tel:+60102722053">+60 10‑272 2053</a>
+          <a href="mailto:jerojosis1906@gmail.com">jerojosis1906@gmail.com</a>
+          <span style="color:var(--paper-dim)">Bukit Mertajam, Pulau Pinang, MY</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="Jero_Selvin_Josis_Justin_Resume.pdf" download>↓ Download PDF résumé</a>
+          <a class="btn btn-ghost" href="mailto:jerojosis1906@gmail.com">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="nameplate">
+        <img class="nameplate-photo" src="assets/photo.jpg" alt="Portrait of Jero Selvin Josis Justin">
+        <div class="nameplate-head">ID PLATE</div>
+        <dl class="spec">
+          <div><dt>MODEL</dt><dd>Test / Quality / Calibration Eng.</dd></div>
+          <div><dt>SERIAL</dt><dd>JSJJ‑840619</dd></div>
+          <div><dt>MFG. DATE</dt><dd>19 Jun 1984</dd></div>
+          <div><dt>CALIBRATED</dt><dd>2026 — Current</dd></div>
+          <div><dt>EXPERIENCE</dt><dd>20+ years</dd></div>
+          <div><dt>DOMAINS</dt><dd>5 disciplines</dd></div>
+          <div><dt>STATUS</dt><dd style="color:var(--ok)">● In service</dd></div>
+        </dl>
+      </div>
+    </div>
+  </header>
+
+  <hr class="div">
+
+  <section id="about">
+    <div class="section-head"><span class="section-num">01</span><h2 class="section-title">About</h2><span class="rule"></span></div>
+    <div class="about-body">
+      <div>
+        <p>I started in IT and networking — servers, LANs, hardware repair — across Tamil Nadu, Dubai, Baghdad and Kandahar between 2004 and 2012. That habit of tracing a fault back to its root carried straight into calibration engineering, where I spent five years at <strong>Micro Precision Calibration</strong> certifying electrical, mechanical, RF and optical equipment for compliance.</p>
+        <p>From there I moved into manufacturing: <strong>Jabil Circuit</strong> and later <strong>Flextronics Technology</strong>, where as a Senior Test Engineer I cut test failures by 25% through structured RCA and CAPA, and automated test workflows in Python, PyTest and PySerial to make that improvement repeatable.</p>
+        <p>Since 2025 I've also been teaching AI, robotics and STEM to school students — designing hands‑on projects in Python, Scratch and PictoBlox that introduce Generative AI, machine learning and Industry 4.0 concepts early. I'm currently looking for my next role in test, quality, or manufacturing engineering.</p>
+      </div>
+      <div>
+        <div class="fact"><span>Core discipline</span><b>RCA / CAPA</b></div>
+        <div class="fact"><span>Test automation</span><b>Python · PySerial</b></div>
+        <div class="fact"><span>Quality system</span><b>Six Sigma · SPC</b></div>
+        <div class="fact"><span>NDE methods</span><b>4 certified</b></div>
+        <div class="fact"><span>Languages</span><b>EN · MS · TA</b></div>
+        <div class="fact"><span>Location</span><b>Penang, MY</b></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section id="experience">
+    <div class="section-head"><span class="section-num">02</span><h2 class="section-title">Experience</h2><span class="rule"></span></div>
+
+    <div class="timeline">
+
+      <div class="tl-item current">
+        <div class="tl-years">2025 —<br>Present</div>
+        <span class="tl-tag">CURRENT</span>
+        <div class="tl-role">Part‑Time AI &amp; Robotics Trainer</div>
+        <div class="tl-org">Probino Solution Sdn Bhd <span>· Kulim, Pulau Pinang</span></div>
+        <div class="tl-desc">Deliver hands-on AI, robotics and STEM workshops to primary and secondary students, covering automation, coding and problem-solving. Guide project work in Scratch, PictoBlox and Python with sensors and robotics kits, and build training materials that introduce Generative AI, machine learning, computer vision and Industry 4.0 concepts.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">Feb 2023 —<br>Jan 2024</div>
+        <div class="tl-role">Senior Test Engineer</div>
+        <div class="tl-org">Flextronics Technology Sdn Bhd <span>· Prai, Pulau Pinang</span></div>
+        <div class="tl-desc">Owned manufacturing test operations, product quality monitoring and yield improvement in a high-volume production line. Reduced test failures by 25% through root cause analysis and CAPA implementation. Automated test equipment and processes in Python, PyTest and PySerial, and led cross-functional resolution of test and quality issues with Product Engineering and QA.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">Aug 2022 —<br>Jan 2023</div>
+        <div class="tl-role">Manufacturing Engineer</div>
+        <div class="tl-org">Jabil Circuit Sdn Bhd <span>· Bayan Lepas, Pulau Pinang</span></div>
+        <div class="tl-desc">Optimised manufacturing processes and maintained production equipment while holding quality control compliance with QC and production teams. Created and maintained AutoCAD 2D layouts, mechanical drawings and equipment floor plans to reduce downtime and lift production efficiency.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">Nov 2017 —<br>Jun 2022</div>
+        <div class="tl-role">Calibration Engineer cum Office Admin</div>
+        <div class="tl-org">Micro Precision Calibration Sdn Bhd <span>· Malaysia (India Branch)</span></div>
+        <div class="tl-desc">Calibrated electrical, mechanical, RF and optical equipment — scheduling, executing and documenting each process for accuracy and compliance. Assisted mechanical fixture design and calibration setup drawings in AutoCAD, ran internal audits, and managed yearly tax and GST filings for the branch.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">Jul 2016 —<br>May 2017</div>
+        <div class="tl-role">Operation Executive &amp; CCTV Technical Advisor / Business Development</div>
+        <div class="tl-org">Independent <span>· Business Development</span></div>
+        <div class="tl-desc">Ran daily operations and advised clients on CCTV system design, installation and structured cabling, drawn up in AutoCAD. Drove business growth through strategic planning and client engagement.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">Apr 2012 —<br>Feb 2016</div>
+        <div class="tl-role">CCTV, Computer &amp; Networking Technician / HR Assistant</div>
+        <div class="tl-org">Pelita Samudra Pertama (M) Sdn Bhd <span>· Malaysia</span></div>
+        <div class="tl-desc">Installed and maintained CCTV systems, computer networks and IT infrastructure, while supporting HR operations — employee records, recruitment and administrative compliance.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">2007 —<br>2012</div>
+        <div class="tl-role">System Administrator &amp; Networking Technician</div>
+        <div class="tl-org">Supreme Catering Co. (Kandahar) · Prime Projects Intl. (Baghdad) · Top Insight Computers (Dubai) · The Indian Engineering College (Tamil Nadu)</div>
+        <div class="tl-desc">Managed IT infrastructure across four organisations and three countries — servers, LANs/WANs, security and backups — while providing end-user support and delivering IT training.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">Mar 2004 —<br>Sep 2007</div>
+        <div class="tl-role">Computer Hardware Technician</div>
+        <div class="tl-org">HARD‑NET <span>· Tamil Nadu, India</span></div>
+        <div class="tl-desc">Diagnosed, repaired and installed computer hardware and peripherals; performed routine maintenance and documented repairs against safety protocol — the starting point for a career built on finding root causes.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section id="skills">
+    <div class="section-head"><span class="section-num">03</span><h2 class="section-title">Skills &amp; technologies</h2><span class="rule"></span></div>
+    <div class="spec-sheet">
+      <div class="spec-row">
+        <div class="cat">QUALITY &amp; TEST</div>
+        <div class="items">
+          <span class="chip">Test Failure Analysis</span><span class="chip">Yield Improvement</span>
+          <span class="chip">Root Cause Analysis (RCA)</span><span class="chip">CAPA</span>
+          <span class="chip">Product Validation</span><span class="chip">Production Testing</span>
+          <span class="chip">SPC</span><span class="chip">NPI</span><span class="chip">Reliability Engineering</span>
+        </div>
+      </div>
+      <div class="spec-row">
+        <div class="cat">TEST AUTOMATION</div>
+        <div class="items">
+          <span class="chip">Python</span><span class="chip">PyTest</span><span class="chip">PySerial</span>
+          <span class="chip">SQL</span><span class="chip">Power BI</span>
+        </div>
+      </div>
+      <div class="spec-row">
+        <div class="cat">METHODOLOGY</div>
+        <div class="items">
+          <span class="chip">Six Sigma</span><span class="chip">Lean Manufacturing</span><span class="chip">Industry 4.0</span>
+        </div>
+      </div>
+      <div class="spec-row">
+        <div class="cat">CALIBRATION &amp; CAD</div>
+        <div class="items">
+          <span class="chip">Electrical / Mechanical / RF / Optical Calibration</span>
+          <span class="chip">AutoCAD 2D</span><span class="chip">NDE Testing</span>
+        </div>
+      </div>
+      <div class="spec-row">
+        <div class="cat">IT &amp; NETWORKING</div>
+        <div class="items">
+          <span class="chip">Windows Server Admin</span><span class="chip">LAN/WAN</span>
+          <span class="chip">CCNA-level Networking</span><span class="chip">VoIP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section id="certifications">
+    <div class="section-head"><span class="section-num">04</span><h2 class="section-title">Certifications</h2><span class="rule"></span></div>
+    <div class="cert-grid">
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">Six Sigma Yellow Belt</div><div class="cert-sub">Quality methodology</div></div></div>
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">Diploma in Quality Management</div><div class="cert-sub">Online course</div></div></div>
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">NDE Certification</div><div class="cert-sub">Radiography · Magnetic Particle · Ultrasonic · Liquid Penetrant</div></div></div>
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">MCSA</div><div class="cert-sub">Microsoft Certified System Administration, Windows 2000 Server</div></div></div>
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">Associated Network Consultant Program</div><div class="cert-sub">MCSA · CCNA · PIX · Wireless LAN · Linux · VoIP</div></div></div>
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">LabVIEW Core 1 &amp; Core 2</div><div class="cert-sub">Instrumentation &amp; control</div></div></div>
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">HP3070 Hardware Maintenance &amp; Calibration</div><div class="cert-sub">Test equipment</div></div></div>
+      <div class="cert"><div class="mark">✓</div><div><div class="cert-name">Power BI · Python in Excel · Software Testing</div><div class="cert-sub">Data &amp; testing</div></div></div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section id="education">
+    <div class="section-head"><span class="section-num">05</span><h2 class="section-title">Education &amp; languages</h2><span class="rule"></span></div>
+    <div class="two-col">
+      <div>
+        <div class="edu-item">
+          <div class="edu-degree">Bachelor of Science, Electrical &amp; Electronic Engineering</div>
+          <div class="edu-school">Wilmington Metropolitan University (Online)</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Advanced Diploma, Computer Hardware &amp; Networking</div>
+          <div class="edu-school">Hard‑Net, Tamil Nadu, India</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Diploma, Mechanical Engineering</div>
+          <div class="edu-school">Micro Intelligence Technical Institute, Tamil Nadu, India</div>
+        </div>
+      </div>
+      <div>
+        <div class="lang-bar"><div class="lang-label"><span>English</span><span>Fluent</span></div><div class="lang-track"><div class="lang-fill" style="width:95%"></div></div></div>
+        <div class="lang-bar"><div class="lang-label"><span>Malay</span><span>Fluent</span></div><div class="lang-track"><div class="lang-fill" style="width:85%"></div></div></div>
+        <div class="lang-bar"><div class="lang-label"><span>Tamil</span><span>Native</span></div><div class="lang-track"><div class="lang-fill" style="width:100%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Jero Selvin Josis Justin — Built for the next role.</p>
+      <p><a href="mailto:jerojosis1906@gmail.com">jerojosis1906@gmail.com</a> · +60 10‑272 2053</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // single orchestrated reveal as sections scroll into view
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.tl-item, .cert, .spec-row').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
